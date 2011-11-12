@@ -60,8 +60,11 @@ To use the plugin, call the *infiniteScroll* function on the element to which yo
 The following is an example of a non-default implementation:
 
 `$("#scrollContainer").infiniteScroll({`
+
     `direction: "down",`
+
     `duration: 5000`
+
 `});`
 
 Once initialized, you can start the scrolling behaviour with the following code:
