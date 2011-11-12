@@ -13,49 +13,49 @@ Your markup must contain an element with a *page* class. This should be the elem
 Also, you must indicate which elements will be scrolled by assigning a class of *item* to them.
 
 Here is a sample layout that scrolls the rows of a table:
-`<div id="scrollContainer">
-    <table class="page">
-        <tbody>
-            <tr class="item">
-                <td>Sample Text</td>
-		<td>Sample Text</td>
-		<td>Sample Text</td>
-            </tr>
-            <tr class="item">
-                <td>Sample Text</td>
-		<td>Sample Text</td>
-		<td>Sample Text</td>
-            </tr>
-        </tbody>
-    </table>
-</div>`
+    <div id="scrollContainer">
+        <table class="page">
+            <tbody>
+                <tr class="item">
+                    <td>Sample Text</td>
+		    <td>Sample Text</td>
+		    <td>Sample Text</td>
+                </tr>
+                <tr class="item">
+                    <td>Sample Text</td>
+		    <td>Sample Text</td>
+		    <td>Sample Text</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 The Code
 --------
 To use the plugin, call the *infiniteScroll* function on the element to which you want the functionality to be applied. For example:
-`$("#scrollContainer").infiniteScroll();`
+    $("#scrollContainer").infiniteScroll();
 
 *infiniteScroll* takes the following parameters:
 *  direction - "up" or "down". Default is "up".
 *  duration - time in milliseconds between scrolls. Default is 10000 (10 seconds).
 
 The following is an example of a non-default implementation:
-`$("#scrollContainer").infiniteScroll({
-    direction: "down",
-    duration: 5000
-});`
+    $("#scrollContainer").infiniteScroll({
+        direction: "down",
+        duration: 5000
+    });
 
 Once initialized, you can start the scrolling behaviour with the following code:
-`$("#scrollContainer").infiniteScroll.start();`
+    $("#scrollContainer").infiniteScroll.start();
 
 You can also pause scrolling:
-`$("#scrollContainer").infiniteScroll.pause();`
+    $("#scrollContainer").infiniteScroll.pause();
 
 License
 =======
 (The MIT License)
 
-Copyright (c) 2009 Nando Vieira http://simplesideias.com.br
+Copyright (c) 2011 Donna Murphy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
