@@ -12,7 +12,8 @@ Also, you must indicate which elements will be scrolled by assigning a class of 
 
 Here is a sample layout that scrolls the rows of a table:
 
-`<div id="scrollContainer">
+`
+<div id="scrollContainer">
 
      <table class="page">
 
@@ -42,7 +43,8 @@ Here is a sample layout that scrolls the rows of a table:
 
     </table>
 
-</div>`
+</div>
+`
 
 The Code
 --------
@@ -51,6 +53,7 @@ To use the plugin, call the *infiniteScroll* function on the element to which yo
 `$("#scrollContainer").infiniteScroll();`
 
 *infiniteScroll* takes the following parameters:
+
 * direction - "up" or "down". Default is "up".
 * duration - time in milliseconds between scrolls. Default is 10000 (10 seconds).
 
