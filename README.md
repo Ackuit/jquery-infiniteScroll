@@ -1,9 +1,7 @@
 infiniteScroll is a jQuery plugin that supports continuous scrolling of its contents, one item at a time.
-
 Dependencies
 ============
 You will need to include jQuery in your page in order to use this plugin.
-
 Usage
 =====
 The Markup
@@ -13,29 +11,29 @@ Your markup must contain an element with a *page* class. This should be the elem
 Also, you must indicate which elements will be scrolled by assigning a class of *item* to them.
 
 Here is a sample layout that scrolls the rows of a table:
-
-    `<div id="scrollContainer">`
-        `<table class="page">`
-            `<tbody>`
-                `<tr class="item">`
-                    `<td>Sample Text</td>`
-		    `<td>Sample Text</td>`
-		    `<td>Sample Text</td>`
-                `</tr>`
-                `<tr class="item">`
-                    `<td>Sample Text</td>`
-		    `<td>Sample Text</td>`
-		    `<td>Sample Text</td>`
-                `</tr>`
-            `</tbody>`
-       ` </table>`
-    `</div>`
-
+{{{
+<div id="scrollContainer">
+     <table class="page">
+        <tbody>
+            <tr class="item">
+                <td>Sample Text</td>
+		<td>Sample Text</td>
+		<td>Sample Text</td>
+            </tr>
+            <tr class="item">
+                <td>Sample Text</td>
+		<td>Sample Text</td>
+		<td>Sample Text</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+}}}
 The Code
 --------
 To use the plugin, call the *infiniteScroll* function on the element to which you want the functionality to be applied. For example:
 
-`$("#scrollContainer").infiniteScroll();`
+{{{$("#scrollContainer").infiniteScroll();}}}
 
 *infiniteScroll* takes the following parameters:
 * direction - "up" or "down". Default is "up".
@@ -43,10 +41,11 @@ To use the plugin, call the *infiniteScroll* function on the element to which yo
 
 The following is an example of a non-default implementation:
 
-`$("#scrollContainer").infiniteScroll({`
+{{{$("#scrollContainer").infiniteScroll({`
     `direction: "down",`
     `duration: 5000`
-`});`
+`});
+}}}
 
 Once initialized, you can start the scrolling behaviour with the following code:
 
@@ -55,7 +54,6 @@ Once initialized, you can start the scrolling behaviour with the following code:
 You can also pause scrolling:
 
 `$("#scrollContainer").infiniteScroll.pause();`
-
 License
 =======
 (The MIT License)
